@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #00796b;
+}
+
+.mode-buttons, .type-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #b2dfdb;
+    color: #004d40;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+button.active {
+    background-color: #00796b;
+    color: white;
+    transform: scale(1.05);
+}
+
+.quality-control {
+    display: none;
+    margin-bottom: 25px;
+}
+
+.quality-control label {
+    display: block;
+    font-weight: 500;
+    color: #004d40;
+    margin-bottom: 8px;
+}
+
+input[type="range"] {
+    width: 80%;
+    accent-color: #00796b;
+}
+
+.drop-zone {
+    border: 2px dashed #00796b;
+    border-radius: 15px;
+    padding: 40px 20px;
+    color: #00796b;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 25px;
+}
+
+.drop-zone:hover {
+    background-color: #e0f2f1;
+    transform: scale(1.02);
+}
+
+.drop-zone p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.action-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit-btn, .download-btn {
+    background-color: #00796b;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover, .download-btn:hover {
+    background-color: #004d40;
+}

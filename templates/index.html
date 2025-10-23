@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Compression & Decompression Tool</title>
+    <link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>File Compression Tool</h2>
+
+    <!-- Mode Selection -->
+    <div class="mode-buttons">
+        <button id="compressBtn" class="active">Compress</button>
+        <button id="decompressBtn">Decompress</button>
+    </div>
+
+    <!-- Type Selection -->
+    <div class="type-buttons">
+        <button id="imageBtn" class="active">Image</button>
+        <button id="textBtn">Text</button>
+    </div>
+
+    <!-- Quality Slider (Only for Image Compress) -->
+    <div class="quality-control" id="qualityControl">
+        <label for="quality">Quality <small>(1-100)</small></label>
+        <div class="quality-row">
+            <input type="range" id="quality" min="1" max="100" value="75"
+                   oninput="document.getElementById('qualityValue').textContent = this.value">
+            <span id="qualityValue" class="quality-value">75</span>
+        </div>
+    </div>
+
+    <!-- File Drop Zone -->
+    <div class="drop-zone" id="dropZone">
+        <p>Drop your file here or click to upload</p>
+        <input type="file" id="fileInput" hidden>
+    </div>
+
+    <!-- Submit & Download -->
+    <div class="action-buttons" id="actionButtons">
+        <button class="submit-btn" id="submitBtn">Submit</button>
+        <button class="download-btn" id="downloadBtn">Download</button>
+    </div>
+</div>
+
+<script src="static\script.js"></script>
+</body>
+</html>
